@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: black;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(https://th.bing.com/th/id/R.a99e73d5f56d68b1b3425509a45e3e7f?rik=mUiHXkJU1alQPw&riu=http%3a%2f%2fxrust.ru%2fuploads%2fposts%2f2016-11%2f1479466475_oboi-hd.jpg&ehk=7aQzXZtdkaOQcZlCb0123LbN9HJMBTyGjyFtijl7c3o%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+}
+.card {
+    background-image: url(https://images.pexels.com/photos/216596/pexels-photo-216596.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    color: black;
+    border-color: white;
+    border: 2px solid black;
+    padding: 2em;
+    border-radius: 20px;
+    max-width: 400px;
+    max-height: 500px;
+    width: 100%;
+    
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 41px;
+    width: 44px;
+    outline: none;
+    /* background: #7c7c7c2b; */
+    /* color: white; */
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+h1.temp {
+    margin: 0px;
+    margin-bottom: 0.4em;
+}
+.description {
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.weather.loading::after{
+    visibility: visible;
+    content:"Loading........";
+    color: black;
+    position: absolute;
+    top: 0;
+    left:20px;
+}
+#last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:-2rem;
+    margin-left: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
